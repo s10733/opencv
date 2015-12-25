@@ -77,6 +77,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Tesseract-OCR\include\leptonica;C:\Program Files %28x86%29\Tesseract-OCR\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Tesseract-OCR\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -100,13 +102,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\opencv2411\build\include\opencv2;C:\opencv2411\build\include\opencv;C:\opencv2411\build\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\tesseract320\lib;C:\tesseract320\include;C:\tesseract320;C:\opencv2411\build\include\opencv2;C:\opencv2411\build\include\opencv;C:\opencv2411\build\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\opencv2411\build\x64\vc12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_stitching2411d.lib;opencv_contrib2411d.lib;opencv_videostab2411d.lib;opencv_superres2411d.lib;opencv_nonfree2411d.lib;opencv_gpu2411d.lib;opencv_ocl2411d.lib;opencv_legacy2411d.lib;opencv_ts2411d.lib;opencv_calib3d2411d.lib;opencv_features2d2411d.lib;opencv_objdetect2411d.lib;opencv_highgui2411d.lib;opencv_video2411d.lib;opencv_photo2411d.lib;opencv_imgproc2411d.lib;opencv_flann2411d.lib;opencv_ml2411d.lib;opencv_core2411.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_stitching2411d.lib;opencv_contrib2411d.lib;opencv_videostab2411d.lib;opencv_superres2411d.lib;opencv_nonfree2411d.lib;opencv_gpu2411d.lib;opencv_ocl2411d.lib;opencv_legacy2411d.lib;opencv_ts2411d.lib;opencv_calib3d2411d.lib;opencv_features2d2411d.lib;opencv_objdetect2411d.lib;opencv_highgui2411d.lib;opencv_video2411d.lib;opencv_photo2411d.lib;opencv_imgproc2411d.lib;opencv_flann2411d.lib;opencv_ml2411d.lib;opencv_core2411.lib;libtesseract302.lib;libtesseract302d.lib;liblept168.lib;liblept168d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -137,19 +139,58 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\opencv2411\build\include\opencv2;C:\opencv2411\build\include\opencv;C:\opencv2411\build\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\tesseract320\lib;C:\tesseract320\include;C:\tesseract320;C:\opencv2411\build\include\opencv2;C:\opencv2411\build\include\opencv;C:\opencv2411\build\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>opencv_stitching2411.lib;opencv_contrib2411.lib;opencv_videostab2411.lib;opencv_superres2411.lib;opencv_nonfree2411.lib;opencv_gpu2411.lib;opencv_ocl2411.lib;opencv_legacy2411.lib;opencv_ts2411.lib;opencv_calib3d2411.lib;opencv_features2d2411.lib;opencv_objdetect2411.lib;opencv_highgui2411.lib;opencv_video2411.lib;opencv_photo2411.lib;opencv_imgproc2411.lib;opencv_flann2411.lib;opencv_ml2411.lib;opencv_core2411.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_stitching2411.lib;opencv_contrib2411.lib;opencv_videostab2411.lib;opencv_superres2411.lib;opencv_nonfree2411.lib;opencv_gpu2411.lib;opencv_ocl2411.lib;opencv_legacy2411.lib;opencv_ts2411.lib;opencv_calib3d2411.lib;opencv_features2d2411.lib;opencv_objdetect2411.lib;opencv_highgui2411.lib;opencv_video2411.lib;opencv_photo2411.lib;opencv_imgproc2411.lib;opencv_flann2411.lib;opencv_ml2411.lib;opencv_core2411.lib;liblept168.lib;liblept168d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\opencv2411\build\x64\vc12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\leptonica_versionnumbers.vsprops" />
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract_versionnumbers.vsprops" />
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302.dll" />
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302.exp" />
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302d.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302-static-debug.lib" />
+    <Library Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302-static.lib" />
+    <Library Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302.lib" />
+    <Library Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302d.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\apitypes.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\baseapi.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\basedir.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\capi.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\errcode.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\fileerr.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\genericvector.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\helpers.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\host.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\ltrresultiterator.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\memry.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\ndminx.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\pageiterator.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\params.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\platform.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\publictypes.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\resultiterator.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\serialis.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\strngs.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\tesscallback.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\thresholder.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\unichar.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\unicharmap.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\unicharset.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

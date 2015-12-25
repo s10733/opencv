@@ -13,10 +13,124 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\tesseractlib">
+      <UniqueIdentifier>{b58ad464-5b8b-4c5d-8c3c-4c83d7cfede9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tesseractlib\lib">
+      <UniqueIdentifier>{dbbeaca1-9452-4314-affa-e10b8013f15c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tesseractlib\include">
+      <UniqueIdentifier>{ea8e3b12-a34d-4d92-93a0-465d469bd0f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302.dll">
+      <Filter>Source Files\tesseractlib\lib</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302.exp">
+      <Filter>Source Files\tesseractlib\lib</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302d.dll">
+      <Filter>Source Files\tesseractlib\lib</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\leptonica_versionnumbers.vsprops">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract_versionnumbers.vsprops">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302.lib">
+      <Filter>Source Files\tesseractlib\lib</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302d.lib">
+      <Filter>Source Files\tesseractlib\lib</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302-static.lib">
+      <Filter>Source Files\tesseractlib\lib</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\lib\libtesseract302-static-debug.lib">
+      <Filter>Source Files\tesseractlib\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\apitypes.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\baseapi.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\basedir.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\capi.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\errcode.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\fileerr.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\genericvector.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\helpers.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\host.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\ltrresultiterator.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\memry.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\ndminx.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\pageiterator.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\params.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\platform.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\publictypes.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\resultiterator.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\serialis.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\strngs.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\tesscallback.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\thresholder.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\unichar.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\unicharmap.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Downloads\tesseract-3.02.02-win32-lib-include-dirs\tesseract-3.02.02-win32-lib-include-dirs\include\tesseract\unicharset.h">
+      <Filter>Source Files\tesseractlib\include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
